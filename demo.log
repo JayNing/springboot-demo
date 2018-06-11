@@ -1,0 +1,230 @@
+2018-06-11 11:15:59.827  INFO 14948 --- [main] c.n.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-LFV8RMH with PID 14948 (E:\workspace\pc-medical\Medical\springbootdemo\target\classes started by 掌心科技 in E:\workspace\pc-medical\Medical\springbootdemo)
+2018-06-11 11:15:59.840  INFO 14948 --- [main] c.n.s.SpringbootdemoApplication          : No active profile set, falling back to default profiles: default
+2018-06-11 11:15:59.905  INFO 14948 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@192d43ce: startup date [Mon Jun 11 11:15:59 CST 2018]; root of context hierarchy
+2018-06-11 11:16:00.998  INFO 14948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-11 11:16:01.016  INFO 14948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-11 11:16:01.017  INFO 14948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-11 11:16:01.021  INFO 14948 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Git\cmd;E:\java\mysql-5.6.38-winx64\bin;E:\java\apache-maven-3.2.5\bin;E:\thrift;C:\Program Files\Java\jdk1.8.0_144\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\39442\AppData\Local\Microsoft\WindowsApps;;C:\Users\39442\AppData\Local\Programs\Fiddler;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;.]
+2018-06-11 11:16:01.101  INFO 14948 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-11 11:16:01.101  INFO 14948 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1196 ms
+2018-06-11 11:16:01.426  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-11 11:16:01.430  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-11 11:16:01.430  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-11 11:16:01.430  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-11 11:16:01.431  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-11 11:16:01.440  INFO 14948 --- [localhost-startStop-1] c.n.s.listener.ContextListener           : contextInitialized is called.
+2018-06-11 11:16:01.453  INFO 14948 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-11 11:16:01.678  INFO 14948 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-11 11:16:01.861  INFO 14948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-11 11:16:01.998  INFO 14948 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@192d43ce: startup date [Mon Jun 11 11:15:59 CST 2018]; root of context hierarchy
+2018-06-11 11:16:02.057  INFO 14948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add]}" onto public java.lang.String com.ning.springbootdemo.controller.HelloController.addUser(java.lang.String,java.lang.Integer)
+2018-06-11 11:16:02.058  INFO 14948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.ning.springbootdemo.controller.HelloController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)
+2018-06-11 11:16:02.058  INFO 14948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public void com.ning.springbootdemo.controller.HelloController.hello(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-06-11 11:16:02.059  INFO 14948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchById]}" onto public com.ning.springbootdemo.entity.User com.ning.springbootdemo.controller.HelloController.searchById(java.lang.Integer)
+2018-06-11 11:16:02.059  INFO 14948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.ning.springbootdemo.entity.User com.ning.springbootdemo.controller.HelloController.getUser(java.lang.String) throws java.lang.Exception
+2018-06-11 11:16:02.061  INFO 14948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-11 11:16:02.062  INFO 14948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-11 11:16:02.084  INFO 14948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-11 11:16:02.084  INFO 14948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-11 11:16:02.084  INFO 14948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-11 11:16:02.100  INFO 14948 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in baseController
+2018-06-11 11:16:02.332  INFO 14948 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class com.ning.springbootdemo.websocket.CustomWebSocket
+2018-06-11 11:16:02.337  INFO 14948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-11 11:16:02.338  INFO 14948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-11 11:16:02.341  INFO 14948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-11 11:16:02.349  INFO 14948 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-06-11 11:16:02.376  INFO 14948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-11 11:16:02.379  INFO 14948 --- [main] c.n.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 3.798 seconds (JVM running for 4.78)
+2018-06-11 11:16:03.354  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:03 CST 2018
+2018-06-11 11:16:04.358  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:04 CST 2018
+2018-06-11 11:16:05.359  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:05 CST 2018
+2018-06-11 11:16:06.360  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:06 CST 2018
+2018-06-11 11:16:07.363  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:07 CST 2018
+2018-06-11 11:16:08.365  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:08 CST 2018
+2018-06-11 11:16:09.367  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:09 CST 2018
+2018-06-11 11:16:10.369  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:10 CST 2018
+2018-06-11 11:16:11.371  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:11 CST 2018
+2018-06-11 11:16:12.372  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:12 CST 2018
+2018-06-11 11:16:13.373  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:13 CST 2018
+2018-06-11 11:16:14.375  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:14 CST 2018
+2018-06-11 11:16:15.377  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:15 CST 2018
+2018-06-11 11:16:16.378  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:16 CST 2018
+2018-06-11 11:16:17.381  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:17 CST 2018
+2018-06-11 11:16:18.382  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:18 CST 2018
+2018-06-11 11:16:19.346  INFO 14948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-11 11:16:19.348  INFO 14948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-11 11:16:19.364  INFO 14948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-06-11 11:16:19.379  INFO 14948 --- [http-nio-8080-exec-1] c.n.s.interceptor.MyInterceptor          : 11111111111111
+2018-06-11 11:16:19.384  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:19 CST 2018
+2018-06-11 11:16:20.385  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:20 CST 2018
+2018-06-11 11:16:21.386  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:21 CST 2018
+2018-06-11 11:16:22.387  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:22 CST 2018
+2018-06-11 11:16:23.390  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:23 CST 2018
+2018-06-11 11:16:24.391  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:24 CST 2018
+2018-06-11 11:16:25.392  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:25 CST 2018
+2018-06-11 11:16:26.394  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:26 CST 2018
+2018-06-11 11:16:27.395  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:27 CST 2018
+2018-06-11 11:16:28.396  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:28 CST 2018
+2018-06-11 11:16:29.399  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:29 CST 2018
+2018-06-11 11:16:30.400  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:30 CST 2018
+2018-06-11 11:16:31.402  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:31 CST 2018
+2018-06-11 11:16:32.405  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:32 CST 2018
+2018-06-11 11:16:33.407  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:33 CST 2018
+2018-06-11 11:16:34.409  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:34 CST 2018
+2018-06-11 11:16:35.411  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:35 CST 2018
+2018-06-11 11:16:36.413  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:36 CST 2018
+2018-06-11 11:16:37.415  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:37 CST 2018
+2018-06-11 11:16:38.441  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:38 CST 2018
+2018-06-11 11:16:39.444  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:39 CST 2018
+2018-06-11 11:16:40.446  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:40 CST 2018
+2018-06-11 11:16:41.448  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:41 CST 2018
+2018-06-11 11:16:42.451  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:42 CST 2018
+2018-06-11 11:16:43.452  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:43 CST 2018
+2018-06-11 11:16:44.453  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:44 CST 2018
+2018-06-11 11:16:45.455  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:45 CST 2018
+2018-06-11 11:16:46.457  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:46 CST 2018
+2018-06-11 11:16:47.459  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:47 CST 2018
+2018-06-11 11:16:48.462  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:48 CST 2018
+2018-06-11 11:16:49.260  INFO 14948 --- [http-nio-8080-exec-2] c.n.s.interceptor.MyInterceptor          : 222222222222222222
+2018-06-11 11:16:49.463  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:49 CST 2018
+2018-06-11 11:16:50.464  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:50 CST 2018
+2018-06-11 11:16:51.466  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:51 CST 2018
+2018-06-11 11:16:52.467  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:52 CST 2018
+2018-06-11 11:16:53.468  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:53 CST 2018
+2018-06-11 11:16:54.471  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:54 CST 2018
+2018-06-11 11:16:55.473  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:55 CST 2018
+2018-06-11 11:16:56.475  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:56 CST 2018
+2018-06-11 11:16:57.478  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:57 CST 2018
+2018-06-11 11:16:58.479  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:58 CST 2018
+2018-06-11 11:16:59.480  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:16:59 CST 2018
+2018-06-11 11:17:00.482  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:00 CST 2018
+2018-06-11 11:17:01.485  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:01 CST 2018
+2018-06-11 11:17:02.486  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:02 CST 2018
+2018-06-11 11:17:03.489  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:03 CST 2018
+2018-06-11 11:17:04.491  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:04 CST 2018
+2018-06-11 11:17:05.493  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:05 CST 2018
+2018-06-11 11:17:06.494  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:06 CST 2018
+2018-06-11 11:17:07.497  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:07 CST 2018
+2018-06-11 11:17:08.499  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:08 CST 2018
+2018-06-11 11:17:09.500  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:09 CST 2018
+2018-06-11 11:17:10.503  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:10 CST 2018
+2018-06-11 11:17:11.505  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:11 CST 2018
+2018-06-11 11:17:12.506  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:12 CST 2018
+2018-06-11 11:17:13.508  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:13 CST 2018
+2018-06-11 11:17:13.752  INFO 14948 --- [http-nio-8080-exec-9] c.n.s.interceptor.MyInterceptor          : 222222222222222222
+2018-06-11 11:17:14.509  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:14 CST 2018
+2018-06-11 11:17:15.510  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:15 CST 2018
+2018-06-11 11:17:16.512  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:16 CST 2018
+2018-06-11 11:17:17.514  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:17 CST 2018
+2018-06-11 11:17:18.515  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:18 CST 2018
+2018-06-11 11:17:19.518  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:19 CST 2018
+2018-06-11 11:17:20.520  INFO 14948 --- [pool-2-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:17:20 CST 2018
+2018-06-11 11:18:17.169  INFO 15704 --- [main] c.n.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-LFV8RMH with PID 15704 (E:\workspace\pc-medical\Medical\springbootdemo\target\classes started by 掌心科技 in E:\workspace\pc-medical\Medical\springbootdemo)
+2018-06-11 11:18:17.172  INFO 15704 --- [main] c.n.s.SpringbootdemoApplication          : No active profile set, falling back to default profiles: default
+2018-06-11 11:18:17.247  INFO 15704 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@192d43ce: startup date [Mon Jun 11 11:18:17 CST 2018]; root of context hierarchy
+2018-06-11 11:18:18.396  INFO 15704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-11 11:18:18.414  INFO 15704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-11 11:18:18.415  INFO 15704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-11 11:18:18.418  INFO 15704 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Git\cmd;E:\java\mysql-5.6.38-winx64\bin;E:\java\apache-maven-3.2.5\bin;E:\thrift;C:\Program Files\Java\jdk1.8.0_144\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\39442\AppData\Local\Microsoft\WindowsApps;;C:\Users\39442\AppData\Local\Programs\Fiddler;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;.]
+2018-06-11 11:18:18.497  INFO 15704 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-11 11:18:18.498  INFO 15704 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1251 ms
+2018-06-11 11:18:18.807  INFO 15704 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-11 11:18:18.810  INFO 15704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-11 11:18:18.811  INFO 15704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-11 11:18:18.811  INFO 15704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-11 11:18:18.811  INFO 15704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-11 11:18:18.820  INFO 15704 --- [localhost-startStop-1] c.n.s.listener.ContextListener           : contextInitialized is called.
+2018-06-11 11:18:18.827 ERROR 15704 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Exception sending context initialized event to listener instance of class [com.ning.springbootdemo.listener.ContextListener]
+
+com.ning.springbootdemo.exception.UserException: test exception
+	at com.ning.springbootdemo.exception.UserException.<clinit>(UserException.java:27) ~[classes/:na]
+	at com.ning.springbootdemo.service.impl.UserServiceImpl.searchById(UserServiceImpl.java:25) ~[classes/:na]
+	at com.ning.springbootdemo.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$70b34374.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684) ~[spring-aop-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at com.ning.springbootdemo.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$8ebeeed.searchById(<generated>) ~[classes/:na]
+	at com.ning.springbootdemo.listener.ContextListener.contextInitialized(ContextListener.java:27) ~[classes/:na]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5256) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-06-11 11:18:18.827 ERROR 15704 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : One or more listeners failed to start. Full details will be found in the appropriate container log file
+2018-06-11 11:18:18.828 ERROR 15704 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Context [] startup failed due to previous errors
+2018-06-11 11:18:18.828  INFO 15704 --- [localhost-startStop-1] c.n.s.listener.ContextListener           : contextDestroyed is called.
+2018-06-11 11:18:18.830  WARN 15704 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-06-11 11:18:19.036  INFO 15704 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-06-11 11:18:19.053  WARN 15704 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2018-06-11 11:19:57.867  INFO 14552 --- [main] c.n.s.SpringbootdemoApplication          : Starting SpringbootdemoApplication on DESKTOP-LFV8RMH with PID 14552 (E:\workspace\pc-medical\Medical\springbootdemo\target\classes started by 掌心科技 in E:\workspace\pc-medical\Medical\springbootdemo)
+2018-06-11 11:19:57.870  INFO 14552 --- [main] c.n.s.SpringbootdemoApplication          : No active profile set, falling back to default profiles: default
+2018-06-11 11:19:57.926  INFO 14552 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@192d43ce: startup date [Mon Jun 11 11:19:57 CST 2018]; root of context hierarchy
+2018-06-11 11:19:59.079  INFO 14552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-11 11:19:59.099  INFO 14552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-11 11:19:59.099  INFO 14552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-11 11:19:59.102  INFO 14552 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Git\cmd;E:\java\mysql-5.6.38-winx64\bin;E:\java\apache-maven-3.2.5\bin;E:\thrift;C:\Program Files\Java\jdk1.8.0_144\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\39442\AppData\Local\Microsoft\WindowsApps;;C:\Users\39442\AppData\Local\Programs\Fiddler;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;.]
+2018-06-11 11:19:59.180  INFO 14552 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-11 11:19:59.180  INFO 14552 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1254 ms
+2018-06-11 11:19:59.510  INFO 14552 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-11 11:19:59.514  INFO 14552 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-11 11:19:59.514  INFO 14552 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-11 11:19:59.514  INFO 14552 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-11 11:19:59.515  INFO 14552 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-11 11:19:59.524  INFO 14552 --- [localhost-startStop-1] c.n.s.listener.ContextListener           : contextInitialized is called.
+2018-06-11 11:19:59.539  INFO 14552 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-11 11:19:59.724  INFO 14552 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-11 11:19:59.838  INFO 14552 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-11 11:19:59.976  INFO 14552 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@192d43ce: startup date [Mon Jun 11 11:19:57 CST 2018]; root of context hierarchy
+2018-06-11 11:20:00.017  INFO 14552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add]}" onto public java.lang.String com.ning.springbootdemo.controller.HelloController.addUser(java.lang.String,java.lang.Integer)
+2018-06-11 11:20:00.018  INFO 14552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.ning.springbootdemo.entity.User com.ning.springbootdemo.controller.HelloController.getUser(java.lang.String) throws java.lang.Exception
+2018-06-11 11:20:00.018  INFO 14552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public void com.ning.springbootdemo.controller.HelloController.hello(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-06-11 11:20:00.018  INFO 14552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchById]}" onto public com.ning.springbootdemo.entity.User com.ning.springbootdemo.controller.HelloController.searchById(java.lang.Integer)
+2018-06-11 11:20:00.018  INFO 14552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.ning.springbootdemo.controller.HelloController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)
+2018-06-11 11:20:00.020  INFO 14552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-11 11:20:00.021  INFO 14552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-11 11:20:00.037  INFO 14552 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-11 11:20:00.038  INFO 14552 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-11 11:20:00.038  INFO 14552 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-11 11:20:00.048  INFO 14552 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in baseController
+2018-06-11 11:20:00.239  INFO 14552 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class com.ning.springbootdemo.websocket.CustomWebSocket
+2018-06-11 11:20:00.245  INFO 14552 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-11 11:20:00.247  INFO 14552 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-11 11:20:00.252  INFO 14552 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-11 11:20:00.259  INFO 14552 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-06-11 11:20:00.288  INFO 14552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-11 11:20:00.291  INFO 14552 --- [main] c.n.s.SpringbootdemoApplication          : Started SpringbootdemoApplication in 2.951 seconds (JVM running for 3.649)
+2018-06-11 11:20:01.264  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:01 CST 2018
+2018-06-11 11:20:02.265  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:02 CST 2018
+2018-06-11 11:20:03.268  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:03 CST 2018
+2018-06-11 11:20:04.270  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:04 CST 2018
+2018-06-11 11:20:05.271  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:05 CST 2018
+2018-06-11 11:20:05.885  INFO 14552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-11 11:20:05.885  INFO 14552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-11 11:20:05.902  INFO 14552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-06-11 11:20:05.916  INFO 14552 --- [http-nio-8080-exec-1] c.n.s.interceptor.MyInterceptor          : 11111111111111
+2018-06-11 11:20:06.274  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:06 CST 2018
+2018-06-11 11:20:07.276  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:07 CST 2018
+2018-06-11 11:20:08.278  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:08 CST 2018
+2018-06-11 11:20:09.279  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:09 CST 2018
+2018-06-11 11:20:10.282  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:10 CST 2018
+2018-06-11 11:20:11.284  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:11 CST 2018
+2018-06-11 11:20:12.285  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:12 CST 2018
+2018-06-11 11:20:13.288  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:13 CST 2018
+2018-06-11 11:20:14.290  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:14 CST 2018
+2018-06-11 11:20:14.298  INFO 14552 --- [http-nio-8080-exec-4] c.n.s.interceptor.MyInterceptor          : 222222222222222222
+2018-06-11 11:20:14.381  INFO 14552 --- [http-nio-8080-exec-4] c.n.s.controller.BaseController          : exception : com.ning.springbootdemo.exception.UserException: test exception
+2018-06-11 11:20:15.290  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:15 CST 2018
+2018-06-11 11:20:16.294  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:16 CST 2018
+2018-06-11 11:20:17.295  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:17 CST 2018
+2018-06-11 11:20:18.296  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:18 CST 2018
+2018-06-11 11:20:19.298  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:19 CST 2018
+2018-06-11 11:20:20.299  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:20 CST 2018
+2018-06-11 11:20:21.300  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:21 CST 2018
+2018-06-11 11:20:22.303  INFO 14552 --- [pool-1-thread-1] c.n.s.schedule.TestSchedule              : 我是定时器测试日志，时间：Mon Jun 11 11:20:22 CST 2018
