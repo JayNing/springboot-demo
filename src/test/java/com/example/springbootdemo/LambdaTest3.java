@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class LambdaTest {
+public class LambdaTest3 {
     public static void main(String[] args){
         new Thread(()-> {System.out.println("Hello Lambda");}).start();
 
@@ -100,9 +100,6 @@ public class LambdaTest {
         Optional<String> nullOptional = Optional.ofNullable(null);
         System.out.println(isEmpty.isPresent());
         System.out.println(nullOptional.isPresent());
-
-
-
 
     }
 
