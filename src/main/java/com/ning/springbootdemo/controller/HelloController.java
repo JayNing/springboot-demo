@@ -1,8 +1,10 @@
 package com.ning.springbootdemo.controller;
 
+import com.ning.springbootdemo.activemq.Producer;
 import com.ning.springbootdemo.cache.UserCache;
 import com.ning.springbootdemo.entity.User;
 import com.ning.springbootdemo.service.IUserService;
+import org.apache.activemq.command.ActiveMQQueue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.jms.Destination;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -30,6 +33,16 @@ public class HelloController {
     private IUserService userService;
     @Autowired
     private UserCache userCache;
+
+    //通过自定义消费者和生产者，进行消息传递和管理
+    @Autowired
+    private Producer producer;
+//    @Autowired // 也可以注入JmsTemplate，JmsMessagingTemplate对JmsTemplate进行了封装
+//    private JmsMessagingTemplate jmsTemplate;
+  /*  @Autowired
+    private Topic topic;
+    @Autowired
+    private Queue queue;*/
 
     @RequestMapping("/hello")
     public void  hello(HttpServletResponse response) throws IOException {
@@ -63,6 +76,23 @@ public class HelloController {
     @ResponseBody
     public User searchById(@RequestParam("id") Integer id) {
         User user = userService.searchById(id);
+        if (user == null){
+            user = new User();
+        }
+   /*
+        //创建topic类型消息
+        Destination destination = new ActiveMQTopic("mytest.topic");
+        producerTopic.sendMessage(destination,user.toString());*/
+//        producer.sendMessage((Destination)topic,user.toString() + " topic");
+        Destination destination = new ActiveMQQueue("mytest.queue");
+        producer.sendMessage(destination,user.toString() + " queue");
+        /**
+         * 也可以直接使用jmsTemplate进行发送消息
+         *   jmsTemplate.convertAndSend(queue, message);
+         *   jmsTemplate.convertAndSend(topic, message);
+         */
+
+
         return user;
     }
 

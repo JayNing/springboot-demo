@@ -34,6 +34,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>-->
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+
         <!-- MySQL 连接驱动依赖 -->
         <dependency>
             <groupId>mysql</groupId>

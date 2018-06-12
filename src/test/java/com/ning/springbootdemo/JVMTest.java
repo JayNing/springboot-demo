@@ -1,4 +1,4 @@
-package com.example.springbootdemo;
+package com.ning.springbootdemo;
 
 public class JVMTest {
 

@@ -1,4 +1,4 @@
-package com.example.springbootdemo;
+package com.ning.springbootdemo;
 
 import java.util.*;
 import java.util.function.BinaryOperator;

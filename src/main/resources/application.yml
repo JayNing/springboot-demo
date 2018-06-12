@@ -4,6 +4,8 @@ server:
   tomcat.max-threads: 0
   tomcat.uri-encoding: UTF-8
 spring:
+  jms:
+    pub-sub-domain : false # 默认情况下，spring boot的jms配置是queue的方式，此处是指定为topic的方式。如果为True，则是Topic；如果是false或者默认，则是queue。【用于决定activeMQ消息类型】
   datasource:
     url : jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     username : root
@@ -14,6 +16,16 @@ spring:
       force : true
       charset : UTF-8
       enabled : true
+  activemq:
+    broker-url : tcp://localhost:61616
+    in-memory : true
+    pool:
+      enabled : false #如果此处设置为true，需要加如下的依赖包，否则会自动配置失败，报JmsMessagingTemplate注入失败
+              ##        <dependency>
+              #            <groupId>org.apache.activemq</groupId>
+              #            <artifactId>activemq-pool</artifactId>
+              #            <!-- <version>5.7.0</version> -->
+              #        </dependency>
 type-aliases-package : com.ning.springbootdemo.mapper
 mybatis:
   mapperLocations : classpath:mapper/*.xml
