@@ -4,19 +4,19 @@ import com.ning.springbootdemo.activemq.Producer;
 import com.ning.springbootdemo.cache.UserCache;
 import com.ning.springbootdemo.entity.User;
 import com.ning.springbootdemo.service.IUserService;
-import org.apache.activemq.command.ActiveMQQueue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.jms.Destination;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 使用@RestController后，此controller中的接口返回全为json字符串，@RestController注解相当于@ResponseBody ＋ @Controller合在一起的作用
@@ -28,6 +28,9 @@ import java.io.IOException;
 public class HelloController {
 
     private static Logger logger = LoggerFactory.getLogger(HelloController.class);
+
+    @Autowired
+    private RedisTemplate<String, String> redisTemplate;
 
     @Autowired
     private IUserService userService;
@@ -58,7 +61,10 @@ public class HelloController {
         User user = new User();
         user.setAge(age);
         user.setUsername(name);
-        request.getSession().setAttribute("user",user);
+//        request.getSession().setAttribute("user",user);
+
+        redisTemplate.opsForValue().set("user",name,3 * 60L, TimeUnit.SECONDS);
+
         return "user login success";
     }
     @RequestMapping("/add")
@@ -84,8 +90,8 @@ public class HelloController {
         Destination destination = new ActiveMQTopic("mytest.topic");
         producerTopic.sendMessage(destination,user.toString());*/
 //        producer.sendMessage((Destination)topic,user.toString() + " topic");
-        Destination destination = new ActiveMQQueue("mytest.queue");
-        producer.sendMessage(destination,user.toString() + " queue");
+//        Destination destination = new ActiveMQQueue("mytest.queue");
+//        producer.sendMessage(destination,user.toString() + " queue");
         /**
          * 也可以直接使用jmsTemplate进行发送消息
          *   jmsTemplate.convertAndSend(queue, message);

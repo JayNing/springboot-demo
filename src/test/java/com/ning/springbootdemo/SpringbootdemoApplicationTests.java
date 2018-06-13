@@ -14,6 +14,20 @@
 //@SpringBootTest
 //public class SpringbootdemoApplicationTests {
 //
+////    private MockMvc mockMvc;
+////
+////    @Before
+////    public void setMockMvc(){
+////        mockMvc = MockMvcBuilders.standaloneSetup(new HelloController()).build();
+////    }
+////
+////    @Test
+////    public void test() throws Exception {
+////        mockMvc.perform(MockMvcRequestBuilders.get("/searchById?id=123").accept(MediaType.APPLICATION_JSON))
+////                .andExpect(status().isOk())
+////                .andExpect(content().string(equalTo("123")));
+////    }
+//
 //    @Autowired
 //    private Producer producer;
 //    @Test
